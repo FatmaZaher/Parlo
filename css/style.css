@@ -1179,7 +1179,8 @@ input[type="submit"]:hover{
     width: auto;
 }
 .shop-area .shop-top-bar p{
-    display: inline-block;   
+    display: inline-block; 
+    float: right;  
 }
 .item{
     margin-bottom: 30px;
