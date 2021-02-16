@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Blog Details</title>
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/aos.css">
+        <link rel="stylesheet" href="../css/style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--swip up for bake to the start of page-->
+        <div class="swip-up">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        <!--start navbar for width screen more than 992px-->
+        <div class="navbar">
+            <div class="row w-100">
+                <div class="col-6 col-lg-2 d-flex align-items-center">
+                    <div class="logo">parlo</div>
+                </div>
+                <div class="col-lg-7 nav-list d-flex align-items-center">
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li class="li-menu">
+                            <a href="#" class="shop">shop <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul shop-menu-ul">
+                                <li><a href="shop-page.html" target="_self">Shop Page</a></li>
+                                <li><a href="product-details.html" target="_self">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" >Contact</a></li>
+                        <li class="li-menu pages">
+                            <a href="#">pages <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul pages-menu-ul">
+                                <li><a href="about.html" target="_self">About Us</li>
+                                <li><a href="cart-bage.html" target="_self">Cart Page</a></li>
+                                <li><a href="checkout.html" target="_self">Checkout</a></li>
+                                <li><a href="my-account.html" target="_self">My Account</a></li>
+                                <li><a href="login.html" target="_self">Login/Register</a></li>
+                            </ul>
+                        </li> 
+                        <li class="li-menu blog">
+                            <a href="#">blog <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul blog-menu-ul">
+                                <li><a href="blog-bage.html" target="_self">blog Page</a></li>
+                                <li><a href="blog-details.html" target="_self">blog Details</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <!--search box for screen more than 992px-->
+                <div class="search col-lg-3 d-flex align-items-center justify-content-center">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+                <!--menu icon for screen less than 992px-->
+                <div class="col-6">
+                    <div class="menu d-flex justify-content-end">
+                        <div><i class="fas fa-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end navbar for width screen more than 992px-->
+        <!--start navbar for width screen less than 992px-->
+        <div class="body-overlay"></div><!--background black for mobile navbar-->
+        <div class="mobile">
+            <!--for close the mobile navbar-->
+            <div class="mobile-off text-center">
+                <div><i class="far fa-times-circle"></i></div>
+            </div>
+            <div class="mobile-scroll">
+                <!--search box for mobile screen-->
+                <div class="mobile-search">
+                    <a href="#"><i class="fas fa-search"></i></a></li>
+                    <input type="text" name="search" placeholder="Search.."></li>
+                </div>
+                <!--navbar menu for mobile-->
+                <div class="mobile-menu">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="../index.html" target="_self">Home</a>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card shop-plus">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Shop</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="shop-page.html" target="_self">Shop Page</a></li>
+                                        <li><a href="product-details.html" target="_self">Shop Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="contact.html" target="_self">Contact</a>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card pages-plus">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Pages</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="about.html" target="_self">About Us</li>
+                                        <li><a href="cart-bage.html" target="_self">Cart Page</a></li>
+                                        <li><a href="checkout.html" target="_self">Checkout</a></li>
+                                        <li><a href="my-account.html" target="_self">My Account</a></li>
+                                        <li><a href="contact.html" target="_self">Contact Us</a></li>
+                                        <li><a href="login.html" target="_self">Login/Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card plog-plus">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Blog</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="blog-bage.html" target="_self">blog Page</a></li>
+                                        <li><a href="blog-details.html" target="_self">blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--cuurency section-->
+                <div class="mobile-curr">
+                    <div id="accordion1">
+                        <!--language section-->
+                        <div class="card language">
+                            <div class="card-header" id="heading01">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse01" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Language</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse01" class="collapse" aria-labelledby="heading01" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="#" target="_self">English (US)</a></li>
+                                        <li><a href="#" target="_self">English (UK)</a></li>
+                                        <li><a href="#" target="_self">Spanish</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--currency section-->
+                        <div class="card currency">
+                            <div class="card-header" id="heading02">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse02" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Currency</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse02" class="collapse" aria-labelledby="heading02" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="#" target="_self">USD</a></li>
+                                        <li><a href="#" target="_self">EUR</a></li>
+                                        <li><a href="#" target="_self">Real</a></li>
+                                        <li><a href="#" target="_self">BDT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--account section-->
+                        <div class="card my-account">
+                            <div class="card-header" id="heading03">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse03" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">My Account</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse03" class="collapse" aria-labelledby="heading03" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="html/login.html" target="_self">Login</a></li>
+                                        <li><a href="html/my-account.html" target="_self">Creat Account</a></li>
+                                        <li><a href="html/my-account.html" target="_self">My Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!--social media in mobile screen-->
+                <div class="mobile-soical-media text-center">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="google"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--end navbar for width screen less than 992px-->
+        <!--page header-->
+        <div class="header text-center">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-0 m-0 d-flex justify-content-center">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">blog details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--Page body-->
+        <div class="shop-area">
+            <div class="container">
+                <div class="row">
+                    <!--left side for select-->
+                    <div class="col-lg-3 order" data-aos="fade-right">
+                        <!--search section-->
+                        <div class="mobile-search p-0">
+                            <h6>Search</h6>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <input type="text" name="search" placeholder="Search..">
+                        </div>
+                        <!--check section-->
+                        <div class="check-labels">
+                            <h6>Categories</h6>
+                            <input type="checkbox" id="women">
+                            <label for="women">
+                                <span></span>
+                                <span class="seconde-span">4</span>
+                                Women
+                            </label>
+                            <input type="checkbox" id="men">
+                            <label for="men">
+                                <span></span>
+                                <span class="seconde-span">4</span>
+                                Men
+                            </label>
+                            <input type="checkbox" id="bags">
+                            <label for="bags">
+                                <span></span>
+                                <span class="seconde-span">4</span>
+                                Bags
+                            </label> 
+                            <input type="checkbox" id="accessories">
+                            <label for="accessories">
+                                <span></span>
+                                <span class="seconde-span">4</span>
+                                Accessories
+                            </label>
+                        </div>
+                        <!--projects section-->
+                        <div class="projects mt-5">
+                            <!--section header-->
+                            <h6 class="mb-3">Recent Projects</h6>
+                            <!--project 1-->
+                            <div class="project">
+                                <div class="row">  
+                                    <div class="project-img">
+                                        <span><img src="../images/sidebar-1.jpg"></span>
+                                    </div>
+                                    <div class="project-content pt-2">
+                                        <span>photography</span><br>
+                                        <a href="#">Demo Product Name</a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--project 2-->
+                            <div class="project">
+                                <div class="row">
+                                    <div class="project-img">
+                                        <span><img src="../images/sidebar-2.jpg"></span>
+                                    </div>
+                                    <div class="project-content pt-2">
+                                        <span>pranding</span><br>
+                                        <a href="#">Demo Product Name</a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--project 3-->
+                            <div class="project">
+                                <div class="row">
+                                    <div class="project-img">
+                                        <span><img src="../images/sidebar-3.jpg"></span>
+                                    </div>
+                                    <div class="project-content pt-2">
+                                        <span>design</span><br>
+                                        <a href="#">Demo Product Name</a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--project 4-->
+                            <div class="project">
+                                <div class="row">
+                                    <div class="project-img">
+                                        <span><img src="../images/sidebar-1.jpg"></span>
+                                    </div>
+                                    <div class="project-content pt-2">
+                                        <span>photography</span><br>
+                                        <a href="#">Demo Product Name</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!--archive section-->
+                        <div class="archive mt-5">
+                            <h6 class="mb-3">Archive</h6>
+                            <a href="#">June 2018</a>
+                            <a href="#">May 2018</a>
+                            <a href="#">April 2018</a>
+                        </div>
+                        <!--tag section-->
+                        <div class="tag mt-5">
+                            <h6 class="mb-3">Tag</h6>
+                            <ul>
+                                <li><a href="#">Clothing</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">For Men</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Fashion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--right side include blog details-->
+                    <div class="col-lg-9 px-4 shop-right-side">
+                        <div class="blog-content">
+                            <!--first section include photo and p-->
+                            <div class="blog-details-top">
+                                <div class="blog-details-img" data-aos="zoom-in-up">
+                                    <img src="../images/blog-9.jpg">
+                                </div>
+                                <div class="blog-details-content">
+                                    <h4 class="mt-4" data-aos="fade-up">14 Emerging Fashion Influencers Who Are Going to Own 2018</h4>
+                                    <ul data-aos="fade-up">
+                                        <li>23 December 2019</li>
+                                        <li>\ 24 View</li>
+                                        <li>\ 4 likes</li>
+                                    </ul>
+                                    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprhendit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin occaecat cupidatat non sunt proident, in culpa qei officia deser mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volupta accusantium doloremque laudantium, totam rem aperiam. </p>
+                                    <blockquote data-aos="fade-up">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt labo dolor magna aliqua. Ut enim ad minim veniam quis nostrud.</blockquote>
+                                    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                            </div>
+                            <!--second section include two photo and p-->
+                            <div class="blog-details-second overflow-hidden">
+                                <div class="row mt-5 mb-4">
+                                    <div class="col-md-6 mb-4">
+                                        <img src="../images/blog-details-2.jpg" data-aos="zoom-in-right">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="../images/blog-details-3.jpg" data-aos="zoom-in-left">
+                                    </div>
+                                </div>
+                                <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <!--third section include tag share--> 
+                            <div class="tag-share" data-aos="fade-up">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Lifestyle ,</a></li>
+                                            <li><a href="#">Interior ,</a></li>
+                                            <li><a href="#">Outdoor</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="share">
+                                            <span>Share : </span>
+                                            <ul>
+                                                <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!--fourth section include pre and next botton-->
+                            <div class="pre-next" data-aos="fade-up">
+                                <div class="prev-tag d-inline-block">
+                                    <a href="#"><i class="fas fa-angle-left"></i> Prev Post</a>
+                                </div>
+
+                                <div class="next-tag d-inline-block float-right">
+                                    <a href="#">Next Post <i class="fas fa-angle-right"></i></a>   
+                                </div>
+                            </div>
+                            <!--fifth section include comments-->
+                            <div class="blog-comments my-5">
+                                <h4 data-aos="fade-up">Comments : 02</h4>
+                                <!--comment 1-->
+                                <div class="single-comment" data-aos="fade-up">
+                                    <div class="row">
+                                        <div class="comment-img col-5 col-md-2 mb-3">
+                                            <span><img src="../images/comment-1.jpg"></span>
+                                        </div>
+                                        <div class="comment-info col-md-10">
+                                            <h6>Anthony stephens</h6>
+                                            <span>October 14, 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam</p>
+                                            <a href="#">REPLY</a>
+                                        </div> 
+                                    </div>     
+                                </div>
+                                <!--comment 2-->
+                                <div class="single-comment" data-aos="fade-up">
+                                    <div class="row justify-content-md-end">
+                                        <div class="comment-img col-4 col-md-2 mb-3">
+                                            <img src="../images/comment-2.jpg">
+                                        </div>
+                                        <div class="comment-info col-8 col-md-9">
+                                            <h6>dx joxova</h6>
+                                            <span>October 14, 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam</p>
+                                            <a href="#">REPLY</a>
+                                        </div>
+                                    </div>     
+                                </div>
+                                <!--comment 3-->
+                                <div class="single-comment" data-aos="fade-up">
+                                    <div class="row">
+                                        <div class="comment-img col-5 col-md-2 mb-3">
+                                            <span><img src="../images/comment-1.jpg"></span>
+                                        </div>
+                                        <div class="comment-info col-md-10">
+                                            <h6>Anthony stephens</h6>
+                                            <span>October 14, 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam</p>
+                                            <a href="#">REPLY</a>
+                                        </div> 
+                                    </div>     
+                                </div>
+                            </div>
+                            <!--sixth section include form to add comment-->
+                            <div class="add-comment"  data-aos="fade-up">
+                                <h4>Post A Comment</h4>
+                                <div class="contact-form">
+                                    <form>
+                                        <input type="text"  placeholder="Full Name">
+                                        <input type="email"  placeholder="Email Address">
+                                        <textarea name="massage" placeholder="Message"></textarea>
+                                        <input type="submit"  value="Send Message">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--start footer area section-->
+        <div class="footer">
+            <!--page section-->
+            <div class="footer-top">
+                <div class="container">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="shop-page.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Pages</a></li>
+                        <li><a href="blog-bage.html">blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--contact section-->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!--social media section-->
+                        <div class="col-md-5 col-lg-4 mb-3">
+                            <ul>
+                                <li><a href="#">Facebok</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <!--copyright section-->
+                        <div class="col-md-4 text-center mb-3">
+                            <p>Copyright © All Right Reserved</p>
+                        </div>
+                        <!--payment section-->
+                        <div class="col-md-3 col-lg-4 text-center">
+                            <a href="#"><img src="../images/payment.png"> </a>   
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!--end footer area section-->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/aos.js"></script>
+        <script src="../js/parlo.js"></script>
+    </body>
+</html>

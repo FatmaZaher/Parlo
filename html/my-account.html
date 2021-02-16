@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>My Account</title>
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/aos.css">
+        <link rel="stylesheet" href="../css/style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--swip up for bake to the start of page-->
+        <div class="swip-up">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        <!--start navbar for width screen more than 992px-->
+        <div class="navbar">
+            <div class="row w-100">
+                <div class="col-6 col-lg-2 d-flex align-items-center">
+                    <div class="logo">parlo</div>
+                </div>
+                <div class="col-lg-7 nav-list d-flex align-items-center">
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li class="li-menu">
+                            <a href="#" class="shop">shop <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul shop-menu-ul">
+                                <li><a href="shop-page.html" target="_self">Shop Page</a></li>
+                                <li><a href="product-details.html" target="_self">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" >Contact</a></li>
+                        <li class="li-menu pages">
+                            <a href="#">pages <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul pages-menu-ul">
+                                <li><a href="about.html" target="_self">About Us</li>
+                                <li><a href="cart-bage.html" target="_self">Cart Page</a></li>
+                                <li><a href="checkout.html" target="_self">Checkout</a></li>
+                                <li><a href="my-account.html" target="_self">My Account</a></li>
+                                <li><a href="login.html" target="_self">Login/Register</a></li>
+                            </ul>
+                        </li> 
+                        <li class="li-menu blog">
+                            <a href="#">blog <i class="fas fa-angle-down"></i></a>
+                            <ul class="menu-ul blog-menu-ul">
+                                <li><a href="blog-bage.html" target="_self">blog Page</a></li>
+                                <li><a href="blog-details.html" target="_self">blog Details</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <!--search box for screen more than 992px-->
+                <div class="search col-lg-3 d-flex align-items-center justify-content-center">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+                <!--menu icon for screen less than 992px-->
+                <div class="col-6">
+                    <div class="menu d-flex justify-content-end">
+                        <div><i class="fas fa-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end navbar for width screen more than 992px-->
+        <!--start navbar for width screen less than 992px-->
+        <div class="body-overlay"></div><!--background black for mobile navbar-->
+        <div class="mobile">
+            <!--for close the mobile navbar-->
+            <div class="mobile-off text-center">
+                <div><i class="far fa-times-circle"></i></div>
+            </div>
+            <div class="mobile-scroll">
+                <!--search box for mobile screen-->
+                <div class="mobile-search">
+                    <a href="#"><i class="fas fa-search"></i></a></li>
+                    <input type="text" name="search" placeholder="Search.."></li>
+                </div>
+                <!--navbar menu for mobile-->
+                <div class="mobile-menu">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="../index.html" target="_self">Home</a>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card shop-plus">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Shop</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="shop-page.html" target="_self">Shop Page</a></li>
+                                        <li><a href="product-details.html" target="_self">Shop Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="contact.html" target="_self">Contact</a>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card pages-plus">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Pages</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="about.html" target="_self">About Us</li>
+                                        <li><a href="cart-bage.html" target="_self">Cart Page</a></li>
+                                        <li><a href="checkout.html" target="_self">Checkout</a></li>
+                                        <li><a href="my-account.html" target="_self">My Account</a></li>
+                                        <li><a href="contact.html" target="_self">Contact Us</a></li>
+                                        <li><a href="login.html" target="_self">Login/Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card plog-plus">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Blog</a>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <!--menu for li in navbar-->
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="blog-bage.html" target="_self">blog Page</a></li>
+                                        <li><a href="blog-details.html" target="_self">blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--cuurency section-->
+                <div class="mobile-curr">
+                    <div id="accordion1">
+                        <!--language section-->
+                        <div class="card language">
+                            <div class="card-header" id="heading01">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse01" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Language</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse01" class="collapse" aria-labelledby="heading01" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="#" target="_self">English (US)</a></li>
+                                        <li><a href="#" target="_self">English (UK)</a></li>
+                                        <li><a href="#" target="_self">Spanish</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--currency section-->
+                        <div class="card currency">
+                            <div class="card-header" id="heading02">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse02" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">Currency</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse02" class="collapse" aria-labelledby="heading02" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="#" target="_self">USD</a></li>
+                                        <li><a href="#" target="_self">EUR</a></li>
+                                        <li><a href="#" target="_self">Real</a></li>
+                                        <li><a href="#" target="_self">BDT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--account section-->
+                        <div class="card my-account">
+                            <div class="card-header" id="heading03">
+                                <h5 class="mb-0">
+                                    <button class="btn-link" data-toggle="collapse" data-target="#collapse03" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="all-btn">
+                                            <a href="#" target="_self">My Account</a>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse03" class="collapse" aria-labelledby="heading03" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="html/login.html" target="_self">Login</a></li>
+                                        <li><a href="html/my-account.html" target="_self">Creat Account</a></li>
+                                        <li><a href="html/my-account.html" target="_self">My Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!--social media in mobile screen-->
+                <div class="mobile-soical-media text-center">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="google"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--end navbar for width screen less than 992px-->        
+        <!--end navbar-->
+        <!--page header-->
+        <div class="header text-center">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-0 m-0 d-flex justify-content-center">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">my ِaccount</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--Page body-->
+        <div class="my-account-area">
+            <div class="container">
+                <div class="row">
+                    <!--the tabs in left side-->
+                    <div class="col-lg-3 col-md-4 mb-4" data-aos="fade-down" >
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">dashboard</a>
+                            <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false">orders</a>
+                            <a class="nav-link" id="v-pills-download-tab" data-toggle="pill" href="#v-pills-download" role="tab" aria-controls="v-pills-download" aria-selected="false">download</a>
+                            <a class="nav-link" id="v-pills-payment-tab" data-toggle="pill" href="#v-pills-payment" role="tab" aria-controls="v-pills-payment" aria-selected="false">payment method</a>
+                            <a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="false">address</a>
+                            <a class="nav-link" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="false">account details</a>
+                            <a class="nav-link" id="v-pills-logout-tab" href="login.html" aria-selected="false">logout</a>
+                        </div>
+                    </div>
+                    <!--content of the tabs in right side-->
+                    <div class="col-lg-9 col-md-8">
+                        <div class="tab-content" id="v-pills-tabContent"  data-aos="fade-up">
+                            <!--content of tab 1-->
+                            <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                               <div class="box-tab">
+                                    <h5 class="mb-4">Dashboard</h5>
+                                    <p>Hello, <span>Alex Tuntuni</span> (If Not<span>Tuntuni !</span>  Logout)<br>
+                                        From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
+                               </div> 
+                            </div>
+                            <!--content of tab 2-->
+                            <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+                                <div class="box-tab">
+                                    <h5 class="mb-4">Orders</h5>
+                                    <div class="table-responsive cart-table-content">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Order</th>
+                                                    <th>Date</th>
+                                                    <th>Status</th>
+                                                    <th>Total</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Aug 22, 2018</td>
+                                                    <td>Pending</td>
+                                                    <td>$3000</td>
+                                                    <td><a href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>July 22, 2018</td>
+                                                    <td>Approved</td>
+                                                    <td>$200</td>
+                                                    <td><a href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>June 12, 2017</td>
+                                                    <td>On Hold</td>
+                                                    <td>$990</td>
+                                                    <td><a href="#">View</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                               </div> 
+                            </div>
+                            <!--content of tab 3-->
+                            <div class="tab-pane fade" id="v-pills-download" role="tabpanel" aria-labelledby="v-pills-download-tab">
+                                <div class="box-tab">
+                                    <h5 class="mb-4">Download</h5>
+                                    <div class="table-responsive cart-table-content">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Date</th>
+                                                    <th>Expire</th>
+                                                    <th>Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Haven - Free Real Estate PSD Template</td>
+                                                    <td>Aug 22, 2018</td>
+                                                    <td>Yes</td>
+                                                    <td><a href="#">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HasTech - Profolio Business Template</td>
+                                                    <td>Sep 12, 2018</td>
+                                                    <td>Never</td>>
+                                                    <td><a href="#">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                               </div>
+                            </div>
+                            <!--content of tab 4-->
+                            <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                <div class="box-tab">
+                                    <h5 class="mb-4">Payment Method</h5>
+                                    <p>You Can't Saved Your Payment Method yet.</p>
+                               </div>
+                            </div>
+                            <!--content of tab 5-->
+                            <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+                                <div class="box-tab">
+                                    <h5 class="mb-4">Billing Address</h5>
+                                    <p class="mb-3"><span>Alex Tuntuni</span></p>
+                                    <p class="mb-3">1355 Market St, Suite 900
+                                    <br>San Francisco, CA 94103</p>
+                                    <p class="mb-3">Mobile: (123) 456-7890</p>
+                                    <a href="#">Edit Address</a>
+                                </div>
+                            </div>
+                            <!--content of tab 6-->
+                            <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                                <div class="box-tab">
+                                    <h5 class="mb-4">Billing Address</h5>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label>First Name</label>
+                                                <input type="text" name="first-name">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label>Last Name</label>
+                                                <input type="text" name="last-name">
+                                            </div>
+                                        </div>
+                                        <label>Display Name</label>
+                                        <input type="text" name="display-name">
+                                        <label>Email Address</label>
+                                        <input type="emial" name="email">
+                                        <fieldset class="mt-4">
+                                            <legend>Password change</legend>
+                                            <label>Current Password</label>
+                                            <input type="password" name="current-password">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <label>New Password</label>
+                                                    <input type="password" name="new-password">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label>Confirm Password</label>
+                                                    <input type="password" name="Confirm-password">
+                                                </div>
+                                            </div>
+                                            <input type="submit" value="save changes">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!--start footer area section-->
+        <div class="footer">
+            <!--page section-->
+            <div class="footer-top">
+                <div class="container">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="shop-page.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Pages</a></li>
+                        <li><a href="blog-bage.html">blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--contact section-->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!--social media section-->
+                        <div class="col-md-5 col-lg-4 mb-3">
+                            <ul>
+                                <li><a href="#">Facebok</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <!--copyright section-->
+                        <div class="col-md-4 col-lg-4 text-center mb-3">
+                            <p>Copyright © All Right Reserved</p>
+                        </div>
+                        <!--payment section-->
+                        <div class="col-md-3 col-lg-4 text-center">
+                            <a href="#"><img src="../images/payment.png"> </a>   
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!--end footer area section-->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/aos.js"></script>
+        <script src="../js/parlo.js"></script>
+    </body>
+</html>
